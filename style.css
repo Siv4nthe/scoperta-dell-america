@@ -1,4 +1,4 @@
-/* style.css */
+
 
 *{
     margin: 0;
@@ -16,7 +16,7 @@ body{
     color: #222;
 }
 
-/* HEADER */
+
 
 .header{
     width: 100%;
@@ -45,7 +45,7 @@ body{
     letter-spacing: 1px;
 }
 
-/* NAVBAR */
+
 
 .navbar ul{
     display: flex;
@@ -67,7 +67,7 @@ body{
     color: #d4af37;
 }
 
-/* HERO */
+
 
 .hero{
     width: 100%;
@@ -121,7 +121,7 @@ body{
     margin-bottom: 35px;
 }
 
-/* BUTTON */
+
 
 .btn{
     display: inline-block;
@@ -144,7 +144,6 @@ body{
     transform: translateY(-3px);
 }
 
-/* INTRO */
 
 .intro{
     max-width: 1100px;
@@ -169,7 +168,6 @@ body{
     margin-bottom: 20px;
 }
 
-/* MENU MOBILE */
 
 .menu-toggle{
     display: none;
@@ -188,7 +186,6 @@ body{
     border-radius: 2px;
 }
 
-/* RESPONSIVE */
 
 @media(max-width: 900px){
 
