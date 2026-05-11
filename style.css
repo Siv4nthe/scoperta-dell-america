@@ -1,4 +1,11 @@
-/* style.css */
+/* --- AGGIUNTA PER FAR FUNZIONARE LE ANCORE (NON CANCELLARE) --- */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Questo evita che l'header copra i titoli */
+}
+/* ------------------------------------------------------------- */
+
+/* style.css ORIGINALE */
 
 *{
     margin: 0;
@@ -25,6 +32,7 @@ header{
 
     position: sticky;
     top: 0;
+    z-index: 999; /* Aggiunto per sicurezza sopra le sezioni */
 }
 
 .logo h1{
@@ -233,6 +241,11 @@ footer{
     .contenitore-card{
         justify-content: center;
     }
+    
+    /* Aggiustamento per mobile dove l'header è più alto */
+    html {
+        scroll-padding-top: 180px;
+    }
 
 }
 /* SEZIONI PAGINA */
@@ -423,4 +436,3 @@ main.pagina section{
 
     box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
-
