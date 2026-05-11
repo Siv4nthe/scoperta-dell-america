@@ -311,4 +311,116 @@ footer{
 .fonti li{
     word-break: break-word;
 }
+/* ========================= */
+/* AMERIGO VESPUCCI - TIPOGRAFIA MIGLIORATA */
+/* ========================= */
+
+/* TITOLO PAGINA */
+
+main.pagina h2{
+    font-size: 42px;
+    color: #16324f;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    letter-spacing: 1px;
+}
+
+/* TITOLI SEZIONI */
+
+main.pagina section h3{
+    font-size: 26px;
+
+    color: #16324f;
+
+    margin-bottom: 15px;
+
+    border-left: 4px solid #16324f;
+    padding-left: 10px;
+}
+
+/* TESTO PIÙ LEGGIBILE */
+
+main.pagina p{
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+
+    color: #222;
+}
+
+/* LISTE PIÙ ORDINATE */
+
+main.pagina ul{
+    margin-left: 25px;
+}
+
+main.pagina li{
+    font-size: 17px;
+
+    margin-bottom: 8px;
+
+    line-height: 1.6;
+}
+
+/* ========================= */
+/* ANCORE MIGLIORATE */
+/* ========================= */
+
+.ancore{
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    justify-content: center;
+
+    margin: 25px 0 40px 0;
+}
+
+.ancore a{
+    background-color: #16324f;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 14px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+    border: 1px solid transparent;
+}
+
+/* effetto hover più “pulito” */
+
+.ancore a:hover{
+    background-color: white;
+    color: #16324f;
+
+    border: 1px solid #16324f;
+}
+
+/* ========================= */
+/* SEZIONI PIÙ “SITO VERO” */
+/* ========================= */
+
+main.pagina section{
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
 
