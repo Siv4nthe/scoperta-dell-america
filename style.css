@@ -1,1 +1,336 @@
 
+/* --- TAVOLOZZA COLORI STORICA & PREMIUM --- 
+   Sfondo: #fcfaf2 (Carta/Avorio antico)
+   Primario: #0c1e36 (Blu Oltremare degli oceani imperiali)
+   Accento: #c5a059 (Oro antico / Ottone dei sestanti)
+   Testo: #1e2530 (Nero Antracite morbido)
+------------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'Georgia', Garamond, serif; /* Font editoriale letterario storico */
+    background-color: #fcfaf2;
+    color: #1e2530;
+    overflow-x: hidden;
+    line-height: 1.8;
+}
+
+/* --- CINEMATIC SCREEN LOADER --- */
+#loader {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: #0c1e36;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #c5a059;
+    transition: opacity 0.6s ease, visibility 0.6s;
+}
+
+.bussola-loader {
+    width: 60px;
+    height: 60px;
+    border: 4px dashed #c5a059;
+    border-radius: 50%;
+    animation: ruota 3s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes ruota {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+#loader p {
+    font-family: system-ui, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* --- NAVIGAZIONE IMPERIALE --- */
+header {
+    background-color: rgba(12, 30, 54, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #c5a059; /* Linea in oro antico */
+}
+
+.logo h1 {
+    color: #fcfaf2;
+    font-family: 'Georgia', serif;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-family: system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: #c5a059;
+    color: #0c1e36;
+    font-weight: 600;
+}
+
+/* --- BANNER PRINCIPALE ED EDITORIALE --- */
+.hero {
+    height: 75vh;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(12, 30, 54, 0.7), rgba(12, 30, 54, 0.9)),
+        url("https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1600");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    border-bottom: 4px double #c5a059;
+}
+
+.hero-text {
+    max-width: 850px;
+}
+
+.hero .subtitle {
+    display: block;
+    color: #c5a059;
+    font-family: system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    color: #fcfaf2;
+    font-size: clamp(36px, 6vw, 60px);
+    font-weight: 800;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    color: #e2e8f0;
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 300;
+}
+
+/* --- GRIGLIA E CONTENITORI --- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.introduzione {
+    background: #ffffff;
+    padding: 60px;
+    border-radius: 4px;
+    box-shadow: 0 15px 40px rgba(12,30,54,0.04);
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid #0c1e36;
+    margin-bottom: 100px;
+}
+
+.introduzione h2, .argomenti h2 {
+    color: #0c1e36;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.introduzione p {
+    font-size: 19px;
+    color: #334155;
+    margin-bottom: 24px;
+}
+
+.text-center { text-align: center; }
+
+/* --- LE AFFASCINANTI CARD STORICHE --- */
+.contenitore-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 40px 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-badge {
+    position: absolute;
+    top: -15px; left: 30px;
+    background-color: #c5a059;
+    color: #0c1e36;
+    font-family: system-ui, sans-serif;
+    font-weight: 700;
+    padding: 4px 14px;
+    font-size: 13px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(197,160,89,0.3);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #c5a059;
+    box-shadow: 0 30px 50px rgba(12, 30, 54, 0.15);
+}
+
+.card h3 {
+    color: #0c1e36;
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+.card p {
+    color: #475569;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    background-color: #0c1e36;
+    color: #fcfaf2;
+    text-decoration: none;
+    padding: 14px 24px;
+    font-family: system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #0c1e36;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c5a059;
+    color: #0c1e36;
+    border-color: #c5a059;
+}
+
+/* --- FOOTER REGALE --- */
+footer {
+    background-color: #0c1e36;
+    color: #94a3b8;
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 3px solid #c5a059;
+}
+
+footer p {
+    font-family: system-ui, sans-serif;
+    font-size: 15px;
+    color: #94a3b8;
+}
+
+footer .credits {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+footer .credits span {
+    color: #c5a059;
+    font-weight: 600;
+}
+
+/* --- TIMONE / ANCORA DI RITORNO IN ALTO --- */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 40px; right: 40px;
+    z-index: 99;
+    background-color: #c5a059;
+    color: #0c1e36;
+    border: none;
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+#backToTop:hover {
+    background-color: #0c1e36;
+    color: #c5a059;
+    transform: translateY(-5px) rotate(45deg);
+}
+
+/* --- ANIMAZIONI JAVASCRIPT ANIMATE-REVEAL --- */
+.animate-fade {
+    animation: fadeIn 1s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(5px);
+    transition: opacity 1s cubic-bezier(0.215, 0.610, 0.355, 1), transform 1s cubic-bezier(0.215, 0.610, 0.355, 1), filter 1s ease;
+}
+
+.scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 20px; }
+    nav { flex-wrap: wrap; justify-content: center; }
+    .introduzione { padding: 35px 20px; }
+}
