@@ -1,129 +1,95 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ferdinando Magellano</title>
-
+    <title>Ferdinando Magellano - Orizzonti Sconosciuti</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigatori.css">
 </head>
-
-<body>
+<body class="pagina-navigatore">
 
     <header>
-
         <div class="logo">
-            <h1>La scoperta dell'America</h1>
+            <h1>Orizzonti Sconosciuti</h1>
         </div>
-
         <nav>
             <a href="index.html">Home</a>
             <a href="colombo.html">Colombo</a>
             <a href="amerigo.html">Vespucci</a>
             <a href="caboto.html">Caboto</a>
-            <a href="magellano.html">Magellano</a>
+            <a href="magellano.html" class="active">Magellano</a>
         </nav>
-
     </header>
 
-   
-<main class="pagina pagina-colombo">
+    <main class="container">
+        <section class="pagina-hero magellano animate-fade">
+            <h2>Ferdinando Magellano</h2>
+            <p>L'uomo che circumnavigò il mondo, provando l'immensità degli oceani planetari.</p>
+            <span class="autore">A cura di: Luca Olivero</span>
+        </section>
 
-        <h2>Il Primo Viaggio Intorno al Mondo</h2>
-        <p style="text-align: center; margin-top: -20px; color: #666;">(di Luca Olivero)</p>
-
-        <!-- INDICE / ANCORE -->
-        <div class="ancore">
-            <a href="#progetto">La partenza</a>
-            <a href="#scoperte">Grandi scoperte</a>
-            <a href="#ritorno">Il ritorno</a>
-            <a href="#importanza">Importanza</a>
+        <div class="ancore scroll-reveal">
+            <a href="#progetto">La Partenza</a>
+            <a href="#scoperte">Le Scoperte</a>
+            <a href="#ritorno">Il Ritorno</a>
+            <a href="#importanza">L'Importanza</a>
             <a href="#navi">Le Navi</a>
-            <a href="#strumenti">Strumenti</a>
+            <a href="#strumenti">Gli Strumenti</a>
             <a href="#fonti">Fonti</a>
         </div>
 
-        <!-- SEZIONE 1: PARTENZA -->
-        <section class="colombo-sezione" id="progetto">
-            <h3>La partenza e l'obiettivo</h3>
-            <p>
-                Circa trent'anni dopo Colombo, il navigatore portoghese <strong>Ferdinando Magellano</strong> organizzò una spedizione per conto del re di Spagna. Il suo obiettivo era trovare un passaggio a sud dell'America per arrivare in India via mare.
-            </p>
-            <p>
-                Nel settembre del 1519, Magellano partì da Siviglia con 5 navi e oltre 230 uomini.
-            </p>
+        <section id="progetto" class="sezione-contenuto scroll-reveal">
+            <h3>La partenza della spedizione</h3>
+            <p>Nel 1519 il navigatore portoghese Ferdinando Magellano propose alla corona spagnola di Carlo V una spedizione per trovare un passaggio marittimo a Sud del continente americano, al fine di raggiungere le Isole Molucche (ricche di spezie) senza violare i territori portoghesi. La flotta di cinque navi salpò da Sanlúcar de Barrameda nel settembre dello stesso anno.</p>
         </section>
 
-        <!-- SEZIONE 2: SCOPERTE -->
-        <section class="colombo-sezione" id="scoperte">
-            <h3>Le grandi scoperte e le difficoltà</h3>
-            <div class="info-colombo">
-                <h5>Punti chiave del viaggio</h5>
-                <ul>
-                    <li><strong>Lo Stretto di Magellano:</strong> Nel 1520 trovò il passaggio naturale tra l'Atlantico e il Pacifico.</li>
-                    <li><strong>L'Oceano Pacifico:</strong> Chiamato così da Magellano per la scarsità di tempeste incontrate durante la traversata.</li>
-                    <li><strong>Le Filippine:</strong> Luogo dove Magellano perse la vita nel 1521 in uno scontro con le popolazioni locali.</li>
-                </ul>
+        <section id="scoperte" class="sezione-contenuto scroll-reveal">
+            <h3>Le grandi scoperte geografiche</h3>
+            <p>Dopo una sosta in Brasile e il superamento di gravi ammutinamenti invernali, nell'ottobre del 1520 Magellano individuò lo stretto passaggio interno che oggi porta il suo nome (lo Stretto di Magellano), sboccando in un oceano calmo che battezzò <strong>Oceano Pacifico</strong>.</p>
+        </section>
+
+        <section id="ritorno" class="sezione-contenuto scroll-reveal">
+            <h3>Il tragico e glorioso ritorno</h3>
+            <p>La traversata del Pacifico fu drammatica a causa della mancanza di cibo e dello scorbuto. Raggiunte le Filippine nel 1521, Magellano rimase ucciso in uno scontro con i nativi guidati dal capo Lapulapu. Il comando passò a Juan Sebastián Elcano.</p>
+            <div class="info-box">
+                <h5>L'Incredibile Bilancio</h5>
+                <p>Nel settembre del 1522, l'unica nave superstite, la <em>Victoria</em>, rientrò in Spagna con soli 18 marinai rimasti in vita dei 237 partiti inizialmente, completando il primo viaggio attorno al mondo della storia.</p>
             </div>
         </section>
 
-        <!-- SEZIONE 3: RITORNO -->
-        <section class="colombo-sezione" id="ritorno">
-            <h3>Il ritorno a casa</h3>
-            <p>
-                Dopo la morte di Magellano, solo la nave <strong>Victoria</strong> riuscì a completare la missione. Il 6 settembre 1522 tornò in Spagna con soli 18 superstiti, tra cui <strong>Antonio Pigafetta</strong>, autore del famoso diario di bordo.
-            </p>
+        <section id="importance" class="sezione-contenuto scroll-reveal">
+            <h3>L'importanza scientifica</h3>
+            <p>La spedizione ebbe un valore scientifico incalcolabile: dimostrò empiricamente la sfericità della Terra, provò che tutti gli oceani del pianeta sono tra loro collegati in un unico bacino idrico e rivelò la necessità di istituire una linea di cambio data.</p>
         </section>
 
-        <!-- SEZIONE 4: IMPORTANZA -->
-        <section class="colombo-sezione" id="importanza">
-            <h3>Perché questo viaggio è stato importante?</h3>
-            <ul>
-                <li>Ha dimostrato scientificamente che la <strong>Terra è rotonda</strong>.</li>
-                <li>Ha confermato che l'America è un continente distinto dall'Asia.</li>
-                <li>Ha provato che tutti gli oceani del mondo sono collegati tra loro.</li>
-            </ul>
-        </section>
-
-        <!-- SEZIONE 5: NAVI -->
-        <section class="colombo-sezione" id="navi">
+        <section id="navi" class="sezione-contenuto scroll-reveal">
             <h3>Le Navi del Tempo: Caracche e Caravelle</h3>
-            <p>
-                Magellano scelse le <strong>Caracche</strong> (come la Victoria) perché, pur essendo più lente delle caravelle, erano più robuste e capienti, fondamentali per un viaggio durato tre anni.
-            </p>
-            <p>
-                Le <strong>Caravelle</strong>, al contrario, venivano usate per l'esplorazione costiera grazie alla loro velocità e manovrabilità.
-            </p>
+            <p>Magellano scelse per l'impresa delle <strong>Caracche</strong> (como la stessa Victoria) poiché, sebbene meno agili delle caravelle di Colombo, offrivano stabilità e uno spazio di stiva notevolmente superiore, indispensabile per provviste destinate a durare anni in mare aperto.</p>
         </section>
 
-        <!-- SEZIONE 6: STRUMENTI -->
-        <section class="colombo-sezione" id="strumenti">
+        <section id="strumenti" class="sezione-contenuto scroll-reveal">
             <h3>Strumenti di navigazione</h3>
+            <p>La flotta di Magellano utilizzò la migliore strumentazione astronomica d'avanguardia disponibile nel Rinascimento:</p>
             <ul>
-                <li><strong>Astrolabio:</strong> Per determinare la latitudine.</li>
-                <li><strong>Bussola:</strong> Per mantenere la rotta verso il Nord.</li>
-                <li><strong>Clessidra:</strong> Per calcolare il tempo e stimare la velocità di navigazione.</li>
+                <li><strong>L'astrolabio nautico:</strong> Per misurare l'altezza zenitale del sole e delle stelle.</li>
+                <li><strong>Le clessidre a sabbia:</strong> Essenziali per cronometrare i turni di guardia e calcolare la velocità stimata attraverso i nodi.</li>
             </ul>
         </section>
 
-        <!-- SEZIONE 7: FONTI -->
-        <section class="colombo-sezione fonti-colombo" id="fonti">
-            <h3>Fonti consultate</h3>
+        <section id="fonti" class="sezione-contenuto scroll-reveal fonti">
+            <h3>Fonti Consultate</h3>
             <ul>
-                <li><a href="https://www.treccani.it" target="_blank">Treccani.it</a> - Enciclopedia online.</li>
+                <li><a href="https://www.treccani.it" target="_blank">Treccani - Enciclopedia Online</a></li>
             </ul>
         </section>
-
     </main>
 
     <footer>
-        <p>Progetto scolastico di storia - Classe 3C Informatica</p>
+        <p>Progetto Scolastico di Storia &bull; Classe 3C Informatica</p>
     </footer>
-      
 
-
+    <button id="backToTop" title="Torna in alto">&#8593;</button>
+    <script src="main.js"></script>
 </body>
-
 </html>
