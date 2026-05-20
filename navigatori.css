@@ -1,166 +1,179 @@
-/* --- ARCHITETTURA PAGINE INTERNE --- */
+/* --- PAGINE INTERNE SUI NAVIGATORI --- */
 .container {
-    max-width: 900px !important;
+    max-width: 950px !important;
 }
 
-/* HERO CON SFONDO BANNER DINAMICO */
+.date-hero {
+    display: block;
+    color: #c5a059;
+    font-family: system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
 .pagina-hero {
-    height: 38vh;
-    min-height: 300px;
-    border-radius: 24px;
+    height: 45vh;
+    min-height: 350px;
+    border: 1px solid rgba(197,160,89,0.3);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 40px;
-    color: white;
-    margin-bottom: 40px;
+    color: #fcfaf2;
+    margin-bottom: 50px;
     background-size: cover;
     background-position: center;
 }
 
-.pagina-hero.colombo { background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url("https://images.unsplash.com/photo-1505764706515-aa95265c5abc?q=80&w=1200"); }
-.pagina-hero.vespucci { background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200"); }
-.pagina-hero.caboto { background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url("https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1200"); }
-.pagina-hero.magellano { background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200"); }
+.pagina-hero.colombo { background-image: linear-gradient(rgba(12, 30, 54, 0.75), rgba(12, 30, 54, 0.9)), url("https://images.unsplash.com/photo-1505764706515-aa95265c5abc?q=80&w=1200"); }
+.pagina-hero.vespucci { background-image: linear-gradient(rgba(12, 30, 54, 0.75), rgba(12, 30, 54, 0.9)), url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200"); }
+.pagina-hero.caboto { background-image: linear-gradient(rgba(12, 30, 54, 0.75), rgba(12, 30, 54, 0.9)), url("https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1200"); }
+.pagina-hero.magellano { background-image: linear-gradient(rgba(12, 30, 54, 0.75), rgba(12, 30, 54, 0.9)), url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200"); }
 
 .pagina-hero h2 {
-    font-size: clamp(30px, 4.5vw, 48px);
-    font-weight: 800;
-    margin-bottom: 12px;
-    letter-spacing: -0.5px;
+    font-size: clamp(34px, 5vw, 52px);
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .pagina-hero p {
-    font-size: clamp(15px, 1.6vw, 19px);
+    font-size: clamp(16px, 1.8vw, 20px);
     color: #cbd5e1;
-    max-width: 650px;
-    font-weight: 300;
+    max-width: 700px;
 }
 
 .pagina-hero .autore {
-    margin-top: 15px;
-    font-size: 13px;
+    margin-top: 20px;
+    font-family: system-ui, sans-serif;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #94a3b8;
 }
 
-/* INDICI ANCORE ARROTONDATI (PILLOLE) */
+/* LE PILLOLE DI NAVIGAZIONE INTERNA */
 .ancore {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .ancore a {
     text-decoration: none;
     background-color: #ffffff;
-    color: #475569;
-    padding: 10px 22px;
-    border-radius: 30px;
+    color: #0c1e36;
+    padding: 12px 24px;
+    font-family: system-ui, sans-serif;
     font-size: 13px;
     font-weight: 600;
     border: 1px solid #e2e8f0;
-    transition: all 0.25s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    transition: all 0.3s ease;
 }
 
 .ancore a:hover {
-    background-color: #0f172a;
-    color: #ffffff;
-    border-color: #0f172a;
-    transform: translateY(-2px);
+    background-color: #0c1e36;
+    color: #c5a059;
+    border-color: #0c1e36;
+    transform: translateY(-3px);
 }
 
-/* SEZIONI ARTICOLO EDITORIALE */
+.icon-nav {
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+/* BLOCCHI DI CONTENUTO EDITORIALI */
 .sezione-contenuto {
     background: #ffffff;
-    border-radius: 24px;
-    padding: 50px;
-    margin-bottom: 35px;
+    padding: 60px;
+    margin-bottom: 45px;
     border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+    position: relative;
+}
+
+.sezione-contenuto::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 4px;
+    background-color: #c5a059; /* Linea dorata sopra ogni sezione */
 }
 
 .sezione-contenuto h3 {
-    color: #0f172a;
-    font-size: 26px;
+    color: #0c1e36;
+    font-size: 28px;
     font-weight: 700;
-    margin-bottom: 22px;
-    border-left: 4px solid #3b82f6;
-    padding-left: 16px;
+    margin-bottom: 25px;
 }
 
 .sezione-contenuto p {
-    font-size: 17px;
-    color: #334155;
-    line-height: 1.8;
-    margin-bottom: 18px;
+    font-size: 18px;
+    color: #27272a;
+    line-height: 1.9;
+    margin-bottom: 22px;
 }
 
-.sezione-contenuto p:last-child {
-    margin-bottom: 0;
-}
-
-/* SISTEMA LISTE */
 .sezione-contenuto ul {
-    margin-left: 25px;
-    margin-bottom: 20px;
-    color: #334155;
+    margin-left: 30px;
+    margin-bottom: 25px;
 }
 
 .sezione-contenuto li {
-    margin-bottom: 12px;
-    font-size: 16px;
+    margin-bottom: 14px;
+    font-size: 17px;
+    color: #27272a;
 }
 
-/* APPUNTI E CURIOSTIÀ (HIGHLIGHT BOX) */
+/* HIGHLIGHT INFO BOX (EFFETTO MANOSCRITTO ANNOTATO) */
 .info-box {
-    background-color: #f0fdf4;
-    border-left: 4px solid #10b981;
-    padding: 24px;
-    border-radius: 12px;
-    margin: 30px 0;
+    background-color: #fbf7ec;
+    border-left: 4px solid #c5a059;
+    padding: 30px;
+    margin: 40px 0;
+    box-shadow: inset 0 0 10px rgba(197,160,89,0.05);
 }
 
 .info-box h5 {
-    color: #064e3b;
-    font-size: 17px;
+    color: #0c1e36;
+    font-family: system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
     font-weight: 700;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 .info-box p {
-    color: #047857;
-    font-size: 15px;
+    color: #451a03;
+    font-size: 16px;
     margin-bottom: 0;
+    font-style: italic;
 }
 
-/* BLOCCO FONTI LINKABILI */
-.fonti ul {
-    list-style-type: none;
-    margin-left: 0;
-}
-
+/* FONTI ACCADEMICHE */
+.fonti ul { list-style-type: none; margin-left: 0; }
+.fonti li { padding: 6px 0; }
 .fonti li a {
-    color: #3b82f6;
+    color: #0c1e36;
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
-    display: inline-block;
-    transition: color 0.2s ease;
+    font-family: system-ui, sans-serif;
+    font-size: 15px;
+    border-bottom: 1px dashed #c5a059;
+    transition: all 0.2s;
 }
 
 .fonti li a:hover {
-    color: #1d4ed8;
-    text-decoration: underline;
+    color: #c5a059;
+    border-bottom-style: solid;
 }
 
 @media (max-width: 768px) {
-    .sezione-contenuto {
-        padding: 35px 20px;
-    }
+    .sezione-contenuto { padding: 40px 20px; }
 }
