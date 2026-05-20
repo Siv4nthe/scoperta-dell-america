@@ -1,44 +1,53 @@
 /**
- * Orizzonti Sconosciuti - Logica Dinamica di Animazione
- * Sviluppato per la classe 3C Informatica
+ * Orizzonti Sconosciuti - Engine Logico Avanzato
+ * Sviluppato per 3C Informatica
  */
+
+window.addEventListener("load", () => {
+    // 1. DISATTIVAZIONE CINEMATIC LOADER
+    const loader = document.getElementById("loader");
+    if (loader) {
+        setTimeout(() => {
+            loader.style.opacity = "0";
+            loader.style.visibility = "hidden";
+        }, 800); // Mantiene il loader visibile per meno di un secondo per dare impatto visivo
+    }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     
-    // 1. SCROLL REVEAL (Effetto comparsa fluida elementi allo scroll)
-    const elementiDaAnimare = document.querySelectorAll('.scroll-reveal');
+    // 2. SCROLL REVEAL (Intersection Observer API)
+    const elementiReveal = document.querySelectorAll('.scroll-reveal');
     
-    const opzioniReveal = {
-        threshold: 0.15,          // L'elemento si attiva quando è visibile al 15%
-        rootMargin: "0px 0px -40px 0px"
+    const configurazioneReveal = {
+        threshold: 0.1,          // L'elemento si attiva appena entra del 10% nello schermo
+        rootMargin: "0px 0px -30px 0px"
     };
 
-    const osservatoreReveal = new IntersectionObserver((voci, observer) => {
+    const osservatorePagine = new IntersectionObserver((voci, observer) => {
         voci.forEach(voce => {
             if (voce.isIntersecting) {
                 voce.target.classList.add('revealed');
-                observer.unobserve(voce.target); // Ferma l'osservazione per ottimizzare la RAM
+                observer.unobserve(voce.target); // Libera memoria RAM
             }
         });
-    }, opzioniReveal);
+    }, configurazioneReveal);
 
-    elementiDaAnimare.forEach(elemento => osservatoreReveal.observe(elemento));
+    elementiReveal.forEach(el => osservatorePagine.observe(el));
 
-    // 2. MANAGEMENT DEL TASTO SMART "TORNA IN ALTO"
-    const btnBackToTop = document.getElementById("backToTop");
+    // 3. LOGICA PULSANTE SMART "TORNA IN ALTO" (SMOOTH SCROLL)
+    const bottoneTimone = document.getElementById("backToTop");
 
-    if (btnBackToTop) {
+    if (bottoneTimone) {
         window.addEventListener("scroll", () => {
-            // Appare solo se l'utente ha sceso più di 350px di pagina
-            if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-                btnBackToTop.style.display = "block";
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                bottoneTimone.style.display = "block";
             } else {
-                btnBackToTop.style.display = "none";
+                bottoneTimone.style.display = "none";
             }
         });
 
-        // Click con ritorno morbido e preciso
-        btnBackToTop.addEventListener("click", () => {
+        bottoneTimone.addEventListener("click", () => {
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
