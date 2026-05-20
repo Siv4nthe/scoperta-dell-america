@@ -1,363 +1,98 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Cristoforo Colombo</title>
-
+    <title>Cristoforo Colombo - Orizzonti Sconosciuti</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="colombo.css">
+    <link rel="stylesheet" href="navigatori.css">
 </head>
-
-<body>
+<body class="pagina-navigatore">
 
     <header>
-
         <div class="logo">
-            <h1>La scoperta dell'America</h1>
+            <h1>Orizzonti Sconosciuti</h1>
         </div>
-
         <nav>
             <a href="index.html">Home</a>
-            <a href="colombo.html">Colombo</a>
+            <a href="colombo.html" class="active">Colombo</a>
             <a href="amerigo.html">Vespucci</a>
             <a href="caboto.html">Caboto</a>
             <a href="magellano.html">Magellano</a>
         </nav>
-
     </header>
 
-    <main class="pagina pagina-colombo">
+    <main class="container">
+        <section class="pagina-hero colombo animate-fade">
+            <h2>Cristoforo Colombo</h2>
+            <p>Il marinaio genovese che sfidò l'ignoto per unire due mondi separati dal tempo.</p>
+            <span class="autore">A cura di: Federico Vitale & Cristian Gennaro</span>
+        </section>
 
-        <h2>Cristoforo Colombo</h2>
-
-        <!-- ANCORE -->
-
-        <div class="indice-colombo">
-
-            <a href="#progetto">Il progetto</a>
-            <a href="#viaggio">1492</a>
-            <a href="#viaggi">Viaggi</a>
-            <a href="#caravelle">Caravelle</a>
-            <a href="#strumenti">Navigazione</a>
-            <a href="#limiti">Limiti</a>
+        <div class="ancore scroll-reveal">
+            <a href="#progetto">Il Progetto</a>
+            <a href="#viaggio">Il 1492</a>
+            <a href="#viaggi">I Viaggi</a>
+            <a href="#caravelle">Le Caravelle</a>
+            <a href="#strumenti">Tecnologia</a>
+            <a href="#limiti">I Limiti</a>
             <a href="#fonti">Fonti</a>
-
         </div>
 
-        <!-- IL PROGETTO -->
-
-        <section class="colombo-sezione" id="progetto">
-
+        <section id="progetto" class="sezione-contenuto scroll-reveal">
             <h3>Il progetto di Colombo</h3>
-
-            <p>
-                Nel XV secolo i commerci con l’Asia erano molto importanti per l’Europa,
-                soprattutto per l’acquisto di spezie, seta e altri prodotti preziosi.
-                Le rotte tradizionali però erano lunghe e pericolose.
-                Per questo molti navigatori cercavano nuove strade per raggiungere l’Oriente.
-            </p>
-
-            <p>
-                Cristoforo Colombo, navigatore genovese nato nel 1451 a Genova,
-                proveniva da una famiglia di tessitori.
-                Fin da giovane lavorò sulle navi mercantili e compì numerosi viaggi
-                nel Mediterraneo e nell’Atlantico.
-            </p>
-
-            <p>
-                Studiò mappe, libri di geografia e racconti di viaggio,
-                tra cui Il Milione di Marco Polo.
-                Egli era convinto che la Terra fosse sferica
-                e pensava che fosse possibile raggiungere l’Asia
-                navigando verso ovest attraverso l’oceano Atlantico.
-            </p>
-
-            <p>
-                Il suo progetto si basava però su alcune ipotesi sbagliate:
-                Colombo credeva che la Terra fosse più piccola di quanto fosse realmente
-                e che la distanza tra Europa e Asia fosse molto minore.
-            </p>
-
-            <p>
-                Inizialmente il suo progetto fu rifiutato dal re del Portogallo.
-                Dopo diversi tentativi riuscì però a convincere i sovrani di Spagna,
-                Isabella di Castiglia e Ferdinando d’Aragona,
-                che decisero di finanziare la spedizione.
-            </p>
-
+            <p>Nel XV secolo i commerci con l'Oriente erano diventati difficili e costosi a causa dell'espansione dell'Impero Ottomano. Cristoforo Colombo, navigatore genovese, propose un'idea rivoluzionaria: raggiungere le Indie navigando verso Occidente, attraversando l'Oceano Atlantico.</p>
+            <p>Colombo basava il suo progetto sull'ipotesi che la Terra fosse sferica, ma ne sottovalutava enormemente la circonferenza, convinto che la distanza tra Europa e Asia fosse molto inferiore a quella reale.</p>
         </section>
 
-        <!-- PRIMO VIAGGIO -->
-
-        <section class="colombo-sezione" id="viaggio">
-
-            <h3>Il primo viaggio del 1492</h3>
-
-            <p>
-                Il 3 agosto 1492 Colombo partì dal porto di Palos, in Spagna,
-                con tre navi:
-                la Niña, la Pinta e la Santa Maria.
-            </p>
-
-            <div class="info-colombo">
-
-                <h5>Le navi della spedizione</h5>
-
-                <ul>
-                    <li><strong>Niña</strong> → caravella stabile e affidabile</li>
-                    <li><strong>Pinta</strong> → la più veloce della spedizione</li>
-                    <li><strong>Santa Maria</strong> → nave principale e più grande</li>
-                </ul>
-
+        <section id="viaggio" class="sezione-contenuto scroll-reveal">
+            <h3>La spedizione del 1492</h3>
+            <p>Dopo il rifiuto del re del Portogallo, Colombo ottenne l'appoggio dei sovrani di Spagna, Ferdinando d'Aragona e Isabella di Castiglia, che finanziarono l'impresa. Il 3 agosto 1492 la flotta, composta da tre navi (la Santa Maria, la Pinta e la Niña), salpò dal porto di Palos.</p>
+            <div class="info-box">
+                <h5>La Svolta Storica</h5>
+                <p>Il viaggio fu lungo e difficile, portando l'equipaggio vicino all'ammutinamento. Il 12 ottobre 1492 fu finalmente avvistata la terraferma: Colombo sbarcò in un'isola delle Bahamas, che ribattezzò San Salvador.</p>
             </div>
-
-            <p>
-                Dopo una sosta alle Isole Canarie,
-                le navi attraversarono l’oceano Atlantico grazie ai venti favorevoli chiamati alisei.
-            </p>
-
-            <p>
-                Il viaggio fu molto difficile:
-                i marinai avevano paura di non trovare terra,
-                le provviste diminuivano
-                e molti uomini iniziarono a perdere fiducia nel comandante.
-            </p>
-
-            <p>
-                Il 12 ottobre 1492 l’equipaggio avvistò terra
-                e sbarcò su un’isola delle Bahamas,
-                chiamata Guanahani dagli abitanti
-                e ribattezzata San Salvador da Colombo.
-            </p>
-
-            <p>
-                Colombo era convinto di essere arrivato nelle Indie,
-                cioè nelle terre dell’Asia orientale.
-                Per questo gli abitanti vennero chiamati “indiani”.
-            </p>
-
         </section>
 
-        <!-- VIAGGI SUCCESSIVI -->
-
-        <section class="colombo-sezione" id="viaggi">
-
-            <h3>I viaggi successivi</h3>
-
-            <h4>Secondo viaggio (1493)</h4>
-
-            <p>
-                Colombo partì con una grande spedizione di 17 navi
-                e circa 1500 uomini.
-                In questa occasione venne fondato Santo Domingo,
-                il primo insediamento stabile spagnolo in America.
-            </p>
-
-            <h4>Terzo viaggio (1498)</h4>
-
-            <p>
-                Colombo raggiunse la costa del Sud America,
-                vicino alla foce del fiume Orinoco.
-                Tuttavia non capì ancora di aver scoperto un nuovo continente.
-            </p>
-
-            <p>
-                Durante questo periodo nacquero conflitti con i coloni spagnoli.
-                Colombo fu accusato di malgoverno:
-                molti coloni criticavano la gestione delle ricchezze,
-                le punizioni troppo severe
-                e i problemi nell’organizzazione delle colonie.
-            </p>
-
-            <p>
-                Nel 1500 Colombo fu arrestato e riportato in Spagna in catene,
-                anche se successivamente venne liberato.
-            </p>
-
-            <h4>Quarto viaggio (1502-1504)</h4>
-
-            <p>
-                Esplorò le coste dell’America Centrale
-                cercando un passaggio verso l’Oceano Indiano.
-            </p>
-
-            <p>
-                Cristoforo Colombo morì nel 1506 a Valladolid, in Spagna,
-                ancora convinto di aver raggiunto l’Asia.
-            </p>
-
+        <section id="viaggi" class="sezione-contenuto scroll-reveal">
+            <h3>I quattro viaggi di Colombo</h3>
+            <p>Colombo compì in totale quattro spedizioni verso le nuove terre tra il 1492 e il 1504, esplorando diverse isole caraibiche, tra cui Cuba e Haiti, e tratti della costa dell'America Centrale. Nonostante le evidenze, rimase convinto fino alla morte di aver raggiunto le Indie, chiamando "indiani" le popolazioni locali.</p>
         </section>
 
-        <!-- CARAVELLE -->
+        <section id="caravelle" class="sezione-contenuto scroll-reveal">
+            <h3>Le Caravelle: L'innovazione tecnologica</h3>
+            <p>Il successo dei viaggi di Colombo fu reso possibile dall'uso delle caravelle, navi portoghesi introdotte a metà del XV secolo. Leggere, veloci e resistenti, combinavano vele quadrate (per la spinta del vento) e vele latine triangolari (per navigare controvento), rivelandosi perfette per le traversate oceaniche.</p>
+        </section>
 
-        <section class="colombo-sezione" id="caravelle">
-
-            <h3>Approfondimento sulle caravelle</h3>
-
-            <p>
-                Le caravelle erano navi utilizzate tra il XV e il XVI secolo,
-                soprattutto da portoghesi e spagnoli,
-                per le grandi esplorazioni oceaniche.
-            </p>
-
-            <h4>Struttura e caratteristiche tecniche</h4>
-
+        <section id="strumenti" class="sezione-contenuto scroll-reveal">
+            <h3>Gli strumenti di navigazione</h3>
+            <p>La navigazione nell'Atlantico richiedeva nuove tecniche. I marinai si affidavano ad antichi e nuovi strumenti:</p>
             <ul>
-                <li>
-                    <strong>Scafo leggero e slanciato</strong>
-                    → permetteva una maggiore velocità.
-                </li>
-
-                <li>
-                    <strong>Pescaggio ridotto</strong>
-                    → consentiva di avvicinarsi alle coste senza incagliarsi.
-                </li>
-
-                <li>
-                    <strong>Vele latine e quadrate</strong>
-                    → miglior utilizzo del vento e maggiore manovrabilità.
-                </li>
-
-                <li>
-                    <strong>Equipaggio ridotto</strong>
-                    → navi più semplici da gestire.
-                </li>
+                <li><strong>La bussola:</strong> Fondamentale per mantenere l'orientamento costante nello spazio oceanico.</li>
+                <li><strong>Il quadrante e l'astrolabio:</strong> Utilizzati per calcolare l'altezza della Stella Polare o del Sole, permettendo di determinare la latitudine della nave.</li>
             </ul>
+        </section>
 
-            <h4>Le caravelle di Colombo</h4>
+        <section id="limiti" class="sezione-contenuto scroll-reveal">
+            <h3>I limits della navigazione stimata</h3>
+            <p>Nonostante gli strumenti, la navigazione oceanica rimaneva in gran parte "stimata". Calcolare la longitudine era quasi impossibile con precisione e i marinai dovevano basarsi sulla velocità approssimativa della nave e sull'esperienza del capitano, esponendosi a costanti rischi di errore.</p>
+        </section>
 
+        <section id="fonti" class="sezione-contenuto scroll-reveal fonti">
+            <h3>Fonti Consultate</h3>
             <ul>
-                <li>
-                    <strong>Niña</strong>
-                    → stabile e affidabile.
-                </li>
-
-                <li>
-                    <strong>Pinta</strong>
-                    → la più veloce della spedizione.
-                </li>
-
-                <li>
-                    <strong>Santa Maria</strong>
-                    → nave principale, più lenta e pesante.
-                </li>
+                <li><a href="https://www.raicultura.it" target="_blank">Rai Cultura</a></li>
+                <li><a href="https://sapere.virgilio.it" target="_blank">Sapere Virgilio</a></li>
+                <li><a href="https://www.fattiperlastoria.it" target="_blank">Fatti per la Storia</a></li>
             </ul>
-
         </section>
-
-        <!-- STRUMENTI -->
-
-        <section class="colombo-sezione" id="strumenti">
-
-            <h3>Strumenti e navigazione a bordo</h3>
-
-            <ul>
-                <li><strong>Bussola</strong> → indicava la direzione.</li>
-
-                <li><strong>Astrolabio</strong> → aiutava a calcolare la posizione rispetto alle stelle.</li>
-
-                <li><strong>Carte nautiche</strong> → mappe spesso imprecise.</li>
-            </ul>
-
-            <p>
-                Nonostante questi strumenti,
-                la navigazione restava molto rischiosa
-                perché l’oceano Atlantico era ancora poco conosciuto.
-            </p>
-
-        </section>
-
-        <!-- LIMITI -->
-
-        <section class="colombo-sezione" id="limiti">
-
-            <h3>Limiti delle caravelle</h3>
-
-            <ul>
-                <li>
-                    Poco spazio a bordo
-                    → condizioni di vita difficili.
-                </li>
-
-                <li>
-                    Scarse provviste
-                    → il cibo si rovinava facilmente.
-                </li>
-
-                <li>
-                    Scarsa difesa
-                    → le caravelle non erano navi da guerra
-                    e quindi erano vulnerabili agli attacchi.
-                </li>
-            </ul>
-
-            <p>
-                Nonostante questi limiti,
-                le caravelle erano considerate le migliori navi disponibili
-                per l’esplorazione oceanica.
-            </p>
-
-        </section>
-
-        <!-- CONCLUSIONE -->
-
-        <section class="colombo-sezione">
-
-            <h3>Conclusione</h3>
-
-            <p>
-                Le caravelle furono fondamentali per le esplorazioni
-                perché univano innovazione tecnica e praticità.
-                Grazie alla loro velocità,
-                manovrabilità e capacità di affrontare lunghi viaggi,
-                permisero a navigatori come Colombo
-                di attraversare oceani sconosciuti.
-            </p>
-
-        </section>
-
-        <!-- FONTI -->
-
-        <section class="colombo-sezione fonti-colombo" id="fonti">
-
-            <h3>Fonti</h3>
-
-            <ul>
-                <li>
-                    <a href="https://www.raicultura.it" target="_blank">
-                        www.raicultura.it
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://sapere.virgilio.it" target="_blank">
-                        sapere.virgilio.it
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.fattiperlastoria.it" target="_blank">
-                        www.fattiperlastoria.it
-                    </a>
-                </li>
-            </ul>
-
-        </section>
-
     </main>
 
     <footer>
-
-        <p>
-            Progetto scolastico di storia - Classe 3C Informatica
-        </p>
-
+        <p>Progetto Scolastico di Storia &bull; Classe 3C Informatica</p>
     </footer>
 
+    <button id="backToTop" title="Torna in alto">&#8593;</button>
+    <script src="main.js"></script>
 </body>
-
 </html>
-
