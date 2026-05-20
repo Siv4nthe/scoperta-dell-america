@@ -1,369 +1,86 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Giovanni Caboto</title>
-
+    <title>Giovanni Caboto - Orizzonti Sconosciuti</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigatori.css">
 </head>
-
-<body>
+<body class="pagina-navigatore">
 
     <header>
-
         <div class="logo">
-            <h1>La scoperta dell'America</h1>
+            <h1>Orizzonti Sconosciuti</h1>
         </div>
-
         <nav>
             <a href="index.html">Home</a>
             <a href="colombo.html">Colombo</a>
             <a href="amerigo.html">Vespucci</a>
-            <a href="caboto.html">Caboto</a>
+            <a href="caboto.html" class="active">Caboto</a>
             <a href="magellano.html">Magellano</a>
         </nav>
-
     </header>
 
-    <main class="pagina">
+    <main class="container">
+        <section class="pagina-hero caboto animate-fade">
+            <h2>Giovanni Caboto</h2>
+            <p>Il marinaio che sfidò le tempeste del nord, svelando le frontiere settentrionali dell'America.</p>
+            <span class="autore">A cura di: Cristian Gennaro</span>
+        </section>
 
-        <h2>Giovanni Caboto</h2>
-
-       
-
-        <div class="ancore">
-
+        <div class="ancore scroll-reveal">
             <a href="#biografia">Biografia</a>
-            <a href="#territori">Divisione dei territori</a>
-            <a href="#nordovest">Passaggio a nord-ovest</a>
-            <a href="#esplorazioni">Le esplorazioni</a>
-            <a href="#successive">Esplorazioni successive</a>
-            <a href="#conclusione">Conclusione</a>
-
+            <a href="#territori">Trattato di Tordesillas</a>
+            <a href="#nordovest">Passaggio a Nord-Ovest</a>
+            <a href="#esplorazioni">Le Spedizioni</a>
+            <a href="#successive">Rotte Successive</a>
+            <a href="#fonti">Fonti</a>
         </div>
 
-        
-
-        <section id="biografia" class="sezione">
-
+        <section id="biografia" class="sezione-contenuto scroll-reveal">
             <h3>Biografia di Giovanni Caboto</h3>
-
-            <p>
-                Giovanni Caboto nacque intorno al 1450, probabilmente a Genova,
-                anche se trascorse gran parte della sua vita a Venezia,
-                dove ottenne la cittadinanza veneziana.
-                Fin da giovane lavorò come commerciante e marinaio,
-                entrando in contatto con le principali rotte commerciali del Mediterraneo.
-            </p>
-
-            <p>
-                Durante i suoi viaggi maturò esperienza nella navigazione
-                e sviluppò interesse per le nuove esplorazioni oceaniche.
-                In quel periodo molti europei cercavano nuove vie commerciali
-                per raggiungere l'Asia e le Indie,
-                evitando le rotte tradizionali controllate dagli Ottomani.
-            </p>
-
-            <p>
-                Successivamente Caboto si trasferì in Inghilterra,
-                dove trovò l'appoggio del re Enrico VII.
-                Il sovrano inglese sperava infatti di competere
-                con Spagna e Portogallo nelle grandi esplorazioni oceaniche.
-            </p>
-
-            <p>
-                Caboto propose di raggiungere l'Asia navigando verso nord-ovest
-                attraverso l'oceano Atlantico.
-                Secondo lui questa rotta sarebbe stata più breve
-                rispetto a quelle già utilizzate dagli spagnoli e dai portoghesi.
-            </p>
-
+            <p>Giovanni Caboto nacque intorno al 1450, probabilmente a Genova, ma ottenne in seguito la cittadinanza veneziana. Esperto mercante e marinaio, si trasferì con la famiglia in Inghilterra a Bristol negli anni Novanta del Quattrocento, cercando finanziatori per rintracciare vie commerciali alternative verso l'Asia.</p>
         </section>
 
+        <section id="territori" class="sezione-contenuto scroll-reveal">
+            <h3>Il Trattato di Tordesillas e l'Inghilterra</h3>
+            <p>Il Trattato di Tordesillas del 1494 aveva diviso le terre extra-europee esclusivamente tra Spagna e Portogallo. Escluse da questa spartizione, nazioni come l'Inghilterra cercarono nuove vie commerciali a Nord, fuori dalle rotte protette dai regni iberici.</p>
+        </section>
 
-        <section id="territori" class="sezione">
+        <section id="nordovest" class="sezione-contenuto scroll-reveal">
+            <h3>Il mito del Passaggio a Nord-Ovest</h3>
+            <p>Caboto intuì che seguendo una rotta più corta a latitudini settentrionali avrebbe potuto raggiungere le Indie in meno tempo rispetto a Colombo. Nacque così l'idea del Passaggio a Nord-Ovest, una rotta marittima polare artica che collegasse l'Oceano Atlantico al Pacifico.</p>
+        </section>
 
-            <h3>La divisione del Nuovo Mondo</h3>
+        <section id="esplorazioni" class="sezione-contenuto scroll-reveal">
+            <h3>Le esplorazioni del 1497</h3>
+            <p>Ottenute le lettere patenti dal re Enrico VII d'Inghilterra, Caboto salpò nel maggio 1497 sulla piccola nave <em>Matthew</em>. A giugno toccò terra nel Nord America, probabilmente sulle coste dell'attuale Terranova o della Nuova Scozia, rivendicando la sovranità per la corona inglese.</p>
+            <div class="info-box">
+                <h5>L'Eredità della Rotta</h5>
+                <p>Le sue esplorazioni aprirono la via alle future rivendicazioni territoriali della Gran Bretagna nel continente americano e scoprirono i banchi di Terranova, una delle zone di pesca più pescose del mondo.</p>
+            </div>
+        </section>
 
-            <p>
-                Dopo il viaggio di Cristoforo Colombo del 1492,
-                Spagna e Portogallo entrarono rapidamente in competizione
-                per il controllo delle nuove terre scoperte.
-                Entrambi i regni volevano ottenere il monopolio
-                delle rotte commerciali e delle future conquiste.
-            </p>
+        <section id="successive" class="sezione-contenuto scroll-reveal">
+            <h3>Esplorazioni successive</h3>
+            <p>Il successo di Caboto ispirò spedizioni successive, tra cui quella del figlio Sebastiano Caboto e dei navigatori francesi Giovanni da Verrazzano e Jacques Cartier, che mapparono le coste settentrionali ponendo le fondamenta della futura colonizzazione anglo-francese.</p>
+        </section>
 
-            <p>
-                Per evitare uno scontro diretto intervenne il papa Alessandro VI,
-                che nel 1493 stabilì una prima divisione dei territori.
-                L'anno successivo, nel 1494,
-                Spagna e Portogallo firmarono il Trattato di Tordesillas.
-            </p>
-
-            <p>
-                Il trattato stabiliva una linea immaginaria nell'oceano Atlantico,
-                chiamata raya,
-                che divideva le aree di influenza dei due Stati:
-            </p>
-
+        <section id="fonti" class="sezione-contenuto scroll-reveal fonti">
+            <h3>Fonti Consultate</h3>
             <ul>
-                <li>a ovest della linea → territori assegnati alla Spagna;</li>
-                <li>a est della linea → territori assegnati al Portogallo.</li>
+                <li><a href="https://www.britannica.com/biography/John-Cabot" target="_blank">Britannica - John Cabot</a></li>
+                <li><a href="https://www.nationalgeographic.com/history" target="_blank">National Geographic History</a></li>
             </ul>
-
-            <p>
-                Grazie a questo accordo la Spagna ottenne gran parte delle Americhe,
-                mentre il Portogallo mantenne il controllo delle rotte africane
-                e successivamente del Brasile.
-            </p>
-
-            <p>
-                Tuttavia il trattato non venne accettato da tutte le potenze europee.
-                Inghilterra e Francia ritenevano ingiusto
-                che due soli Stati si dividessero il Nuovo Mondo.
-                Per questo motivo iniziarono nuove spedizioni verso il Nord America,
-                cercando territori non ancora occupati.
-            </p>
-
-            <p>
-                Questa situazione aumentò la competizione tra gli Stati europei
-                e portò alla nascita delle future colonie inglesi e francesi
-                nel continente americano.
-            </p>
-
         </section>
-
-
-        <section id="nordovest" class="sezione">
-
-            <h3>La ricerca del passaggio a nord-ovest</h3>
-
-            <p>
-                Dopo le scoperte di Colombo,
-                molti navigatori europei iniziarono a cercare
-                un nuovo passaggio marittimo verso l'Asia.
-                L'obiettivo era trovare una rotta più veloce
-                per raggiungere le Indie e i mercati orientali.
-            </p>
-
-            <p>
-                Gli inglesi e i francesi cercavano soprattutto
-                un passaggio a nord-ovest,
-                cioè una via che attraversasse il Nord America
-                per arrivare nell'oceano Pacifico.
-            </p>
-
-            <p>
-                Questo percorso avrebbe permesso di:
-            </p>
-
-            <ul>
-                <li>evitare i territori controllati da Spagna e Portogallo;</li>
-                <li>aprire nuove rotte commerciali;</li>
-                <li>raggiungere direttamente l'Asia e le Indie;</li>
-                <li>rafforzare il potere economico e navale dell'Inghilterra.</li>
-            </ul>
-
-            <p>
-                Anche Giovanni Caboto partecipò a questa ricerca,
-                sostenuto economicamente dalla corona inglese.
-                Sebbene non riuscì a trovare il vero passaggio verso l'Asia,
-                le sue esplorazioni permisero agli europei
-                di conoscere meglio le coste del Nord America.
-            </p>
-
-        </section>
-
-
-        <section id="esplorazioni" class="sezione">
-
-            <h3>Le esplorazioni di Giovanni Caboto</h3>
-
-            <p>
-                Nel 1497 Giovanni Caboto partì dal porto inglese di Bristol
-                a bordo di una piccola nave chiamata Matthew,
-                accompagnato da un equipaggio ridotto.
-            </p>
-
-            <p>
-                Dopo settimane di navigazione nell'oceano Atlantico,
-                raggiunse le coste del Nord America,
-                probabilmente l'isola di Terranova,
-                nell'attuale Canada.
-            </p>
-
-            <p>
-                Caboto credeva di essere arrivato vicino all'Asia,
-                ma in realtà aveva raggiunto territori sconosciuti agli europei.
-                Durante il viaggio esplorò parte delle coste settentrionali
-                e prese possesso delle terre in nome del re d'Inghilterra.
-            </p>
-
-            <p>
-                Le sue spedizioni furono molto importanti
-                perché permisero all'Inghilterra
-                di entrare nella competizione per le esplorazioni oceaniche.
-                Inoltre offrirono nuove informazioni geografiche
-                sulle terre del Nord America.
-            </p>
-
-            <p>
-                Nel 1498 Caboto organizzò una seconda spedizione
-                con diverse navi.
-                Tuttavia di questo viaggio si conosce poco:
-                probabilmente la spedizione si perse nell'Atlantico
-                oppure rientrò senza risultati importanti.
-                Dopo questo momento non si hanno più notizie certe su Caboto.
-            </p>
-
-            <p>
-                Nonostante ciò, i suoi viaggi aprirono la strada
-                alla futura espansione inglese nel continente americano
-                e rappresentarono una delle prime esplorazioni europee
-                del Nord America dopo Colombo.
-            </p>
-
-        </section>
-
-
-        <section id="successive" class="sezione">
-
-            <h3>Le esplorazioni successive</h3>
-
-            <p>
-                Dopo le spedizioni di Caboto,
-                altri navigatori continuarono l'esplorazione del Nord America,
-                soprattutto per conto della Francia.
-            </p>
-
-            <h4>Giovanni da Verrazzano</h4>
-
-            <p>
-                Nel 1524 Giovanni da Verrazzano,
-                navigatore italiano al servizio del re di Francia Francesco I,
-                esplorò gran parte della costa atlantica nordamericana.
-            </p>
-
-            <p>
-                Durante il viaggio raggiunse la zona dell'attuale baia di New York,
-                descrivendo le caratteristiche delle coste,
-                dei porti naturali e delle popolazioni indigene incontrate.
-                I suoi racconti furono importanti
-                per migliorare le conoscenze geografiche europee.
-            </p>
-
-            <p>
-                Verrazzano sperava di trovare un passaggio verso l'Asia,
-                ma non riuscì nel suo obiettivo.
-                Tuttavia le sue esplorazioni rafforzarono
-                l'interesse francese per il Nord America.
-            </p>
-
-            <h4>Jacques Cartier</h4>
-
-            <p>
-                Tra il 1534 e il 1535 il navigatore francese Jacques Cartier
-                esplorò le regioni del Canada
-                e risalì il fiume San Lorenzo.
-            </p>
-
-            <p>
-                Durante il viaggio entrò in contatto
-                con diverse popolazioni indigene
-                e raggiunse territori vicini agli attuali Québec e Montréal.
-            </p>
-
-            <p>
-                Le sue spedizioni permisero alla Francia
-                di conoscere meglio il territorio canadese
-                e prepararono la futura colonizzazione francese del Canada.
-            </p>
-
-            <p>
-                Grazie a queste esplorazioni
-                aumentarono le conoscenze geografiche europee
-                e nacquero i primi interessi coloniali inglesi e francesi
-                nel Nord America.
-            </p>
-
-        </section>
-
-        <section id="conclusione" class="sezione">
-
-            <h3>Conclusione</h3>
-
-            <p>
-                La scoperta dell'America cambiò profondamente
-                la storia europea e mondiale.
-                Dopo il viaggio di Colombo,
-                le principali potenze europee iniziarono una lunga competizione
-                per il controllo delle nuove terre e delle rotte commerciali.
-            </p>
-
-            <p>
-                Il Trattato di Tordesillas divise inizialmente il mondo
-                tra Spagna e Portogallo,
-                ma Inghilterra e Francia non accettarono questa situazione
-                e organizzarono nuove spedizioni nel Nord America.
-            </p>
-
-            <p>
-                Giovanni Caboto ebbe un ruolo fondamentale
-                nelle esplorazioni del Nord America.
-                Le sue spedizioni permisero all'Inghilterra
-                di rivendicare nuovi territori
-                e aprirono la strada alla futura colonizzazione inglese.
-            </p>
-
-            <p>
-                Anche le successive esplorazioni di Verrazzano e Cartier
-                contribuirono ad ampliare le conoscenze geografiche europee
-                e prepararono la nascita delle colonie francesi e inglesi
-                nel continente americano.
-            </p>
-
-        </section>
-
-
-        <section class="sezione">
-
-            <h3>Fonti</h3>
-
-            <ul class="fonti">
-
-                <li>
-                   <a href="https://www.britannica.com/biography/John-Cabot">https://www.britannica.com/biography/John-Cabot</a>
-                </li>
-
-                <li>
-                    <a href="https://www.britannica.com/event/Treaty-of-Tordesillas">https://www.britannica.com/event/Treaty-of-Tordesillas</a>
-                </li>
-
-                <li>
-                    <a href="https://www.nationalgeographic.com/history">https://www.nationalgeographic.com/history</a>
-                </li>
-
-                <li>
-                    <a href="https://www.worldhistory.org">https://www.worldhistory.org</a>
-                </li>
-
-            </ul>
-
-        </section>
-
     </main>
 
     <footer>
-
-        <p>
-            Progetto scolastico di storia - Classe 3C Informatica
-        </p>
-
+        <p>Progetto Scolastico di Storia &bull; Classe 3C Informatica</p>
     </footer>
 
+    <button id="backToTop" title="Torna in alto">&#8593;</button>
+    <script src="main.js"></script>
 </body>
-
 </html>
