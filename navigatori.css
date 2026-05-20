@@ -1,0 +1,166 @@
+/* --- ARCHITETTURA PAGINE INTERNE --- */
+.container {
+    max-width: 900px !important;
+}
+
+/* HERO CON SFONDO BANNER DINAMICO */
+.pagina-hero {
+    height: 38vh;
+    min-height: 300px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    margin-bottom: 40px;
+    background-size: cover;
+    background-position: center;
+}
+
+.pagina-hero.colombo { background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url("https://images.unsplash.com/photo-1505764706515-aa95265c5abc?q=80&w=1200"); }
+.pagina-hero.vespucci { background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200"); }
+.pagina-hero.caboto { background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url("https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1200"); }
+.pagina-hero.magellano { background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200"); }
+
+.pagina-hero h2 {
+    font-size: clamp(30px, 4.5vw, 48px);
+    font-weight: 800;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.pagina-hero p {
+    font-size: clamp(15px, 1.6vw, 19px);
+    color: #cbd5e1;
+    max-width: 650px;
+    font-weight: 300;
+}
+
+.pagina-hero .autore {
+    margin-top: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #94a3b8;
+}
+
+/* INDICI ANCORE ARROTONDATI (PILLOLE) */
+.ancore {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.ancore a {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #475569;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+    transition: all 0.25s ease;
+}
+
+.ancore a:hover {
+    background-color: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+    transform: translateY(-2px);
+}
+
+/* SEZIONI ARTICOLO EDITORIALE */
+.sezione-contenuto {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 50px;
+    margin-bottom: 35px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+}
+
+.sezione-contenuto h3 {
+    color: #0f172a;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    border-left: 4px solid #3b82f6;
+    padding-left: 16px;
+}
+
+.sezione-contenuto p {
+    font-size: 17px;
+    color: #334155;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.sezione-contenuto p:last-child {
+    margin-bottom: 0;
+}
+
+/* SISTEMA LISTE */
+.sezione-contenuto ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+    color: #334155;
+}
+
+.sezione-contenuto li {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* APPUNTI E CURIOSTIÀ (HIGHLIGHT BOX) */
+.info-box {
+    background-color: #f0fdf4;
+    border-left: 4px solid #10b981;
+    padding: 24px;
+    border-radius: 12px;
+    margin: 30px 0;
+}
+
+.info-box h5 {
+    color: #064e3b;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.info-box p {
+    color: #047857;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+/* BLOCCO FONTI LINKABILI */
+.fonti ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.fonti li a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+
+.fonti li a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .sezione-contenuto {
+        padding: 35px 20px;
+    }
+}
