@@ -10,14 +10,16 @@
 /* HERO */
 
 .pagina-colombo .colombo-hero{
-    background: linear-gradient(
-        rgba(10, 35, 60, 0.75),
-        rgba(10, 35, 60, 0.75)
-    ),
-    url("https://images.unsplash.com/photo-1505764706515-aa95265c5abc?q=80&w=1400&auto=format&fit=crop");
+    background-image:
+        linear-gradient(
+            rgba(10, 35, 60, 0.75),
+            rgba(10, 35, 60, 0.75)
+        ),
+        url("https://www.museidigenova.it/sites/default/files/2020-05/Musei%20di%20Genova%20-%20Galata%20-%20%20Cristoforo%20Colombo%20-%203487.JPG");
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     border-radius: 14px;
 

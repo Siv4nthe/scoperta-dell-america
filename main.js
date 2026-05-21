@@ -1,8 +1,7 @@
 /**
- * Orizzonti Sconosciuti - Engine Logico Avanzato v2.0
+ * Orizzonti Sconosciuti -
  * Gestione Tema Dinamico Senza Modifica HTML & Scroll Effects
  */
-
 // Eseguiamo il controllo del tema prima del caricamento completo della pagina per evitare flash bianchi fastidiosi
 (function() {
     const savedTheme = localStorage.getItem("orizzonti-theme");

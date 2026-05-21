@@ -27,11 +27,31 @@
     background-size: cover;
     background-position: center;
 }
+.pagina-hero.vespucci { 
+    background-image: linear-gradient(rgba(12, 30, 54, 0.75), rgba(12, 30, 54, 0.9)), 
+    url("https://www.livornotoday.it/~media/horizontal-hi/56475917932932/amerigo-vespucci-gli-scatti-della-mostra-fotografica-6.jpg");
+    
+    background-size: cover;
+    background-position: center;
+}
 
-.pagina-hero.colombo { background-image: linear-gradient(rgba(12, 30, 54, 0.75), rgba(12, 30, 54, 0.9)), url("https://images.unsplash.com/photo-1505764706515-aa95265c5abc?q=80&w=1200"); }
-.pagina-hero.vespucci { background-image: linear-gradient(rgba(12, 30, 54, 0.75), rgba(12, 30, 54, 0.9)), url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200"); }
-.pagina-hero.caboto { background-image: linear-gradient(rgba(12, 30, 54, 0.75), rgba(12, 30, 54, 0.9)), url("https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1200"); }
-.pagina-hero.magellano { background-image: linear-gradient(rgba(12, 30, 54, 0.75), rgba(12, 30, 54, 0.9)), url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200"); }
+.pagina-hero.caboto { 
+    background-image: linear-gradient(rgba(12, 30, 54, 0.75), rgba(12, 30, 54, 0.9)), 
+    url("https://www.repstatic.it/video/photo/2011/11/27/80539-thumb-full-giovanni_caboto.jpg");
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.pagina-hero.magellano { 
+    background-image: linear-gradient(rgba(12, 30, 54, 0.75), rgba(12, 30, 54, 0.9)), 
+    url("https://upload.wikimedia.org/wikipedia/commons/0/05/Viajes_de_colon.svg");
+    
+    background-size: cover;
+    background-position: center;
+}
+
+
 
 .pagina-hero h2 {
     font-size: clamp(34px, 5vw, 52px);
