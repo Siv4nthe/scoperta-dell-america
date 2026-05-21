@@ -10,12 +10,8 @@
 /* HERO */
 
 .pagina-colombo .colombo-hero{
-    background-image:
-        linear-gradient(
-            rgba(10, 35, 60, 0.75),
-            rgba(10, 35, 60, 0.75)
-        ),
-        url("https://www.museidigenova.it/sites/default/files/2020-05/Musei%20di%20Genova%20-%20Galata%20-%20%20Cristoforo%20Colombo%20-%203487.JPG");
+    background-image: linear-gradient( rgba(10, 35, 60, 0.75), rgba(10, 35, 60, 0.75)),
+        url("https://upload.wikimedia.org/wikipedia/commons/3/34/Christopher_Columbus.jpg");
 
     background-size: cover;
     background-position: center;
