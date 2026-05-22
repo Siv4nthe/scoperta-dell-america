@@ -1,93 +1,102 @@
-# scoperta-dell-america
-pcto sulle scoperte dell'america: Santoro; Gennaro; Vitale; Olivero.
-Funzionalità del progetto
-1. Dark Mode / Light Mode
+README — Progetto PTO: Le Scoperte dell’America
+Autori
 
-Il sito permette di cambiare tema:
+Santoro · Gennaro · Vitale · Olivero
+
+🌍 Le Scoperte dell’America
+
+Sito web storico dedicato ai grandi navigatori che hanno contribuito alla scoperta e all’esplorazione del Nuovo Mondo.
+
+Il progetto è stato realizzato utilizzando tecnologie web moderne come HTML5, CSS3 e JavaScript Vanilla, con particolare attenzione a:
+
+design moderno
+animazioni fluide
+esperienza utente
+responsive design
+organizzazione professionale del codice
+✨ Funzionalità del Progetto
+🌙 Dark Mode / Light Mode
+
+Il sito permette di cambiare tema tra:
 
 modalità chiara
 modalità scura
-
-Funziona tramite:
-
+Tecnologie utilizzate
 CSS Variables
 JavaScript
 localStorage
 
-Il tema scelto rimane salvato anche dopo aver chiuso il browser.
+Il tema scelto viene salvato automaticamente e rimane attivo anche dopo aver chiuso il browser.
 
-2. Loader iniziale
+🧭 Loader iniziale
 
-All’apertura compare una schermata di caricamento con:
+All’apertura del sito compare una schermata di caricamento con:
 
 animazione della bussola
 effetto fade-out finale
 
-Serve per migliorare l’esperienza utente.
+Questa funzione migliora l’esperienza utente e rende il caricamento più moderno e dinamico.
 
-3. Navbar sticky
+📌 Navbar Sticky
 
-La barra di navigazione:
+La barra di navigazione rimane sempre visibile durante lo scroll della pagina.
 
-rimane fissa in alto
-segue l’utente durante lo scroll
+Vantaggi
+navigazione più comoda
+accesso rapido alle sezioni
+migliore usabilità
+🎯 Smooth Scroll
 
-Migliora la navigazione del sito.
+Quando l’utente clicca un link interno, la pagina scorre in modo fluido e graduale.
 
-4. Smooth Scroll
-
-Quando si clicca un link interno:
-
-la pagina scorre lentamente
-il movimento è fluido
-
-Implementato con:
-
+Implementazione
 scroll-behavior: smooth;
-5. Scroll Reveal Animation
+✨ Scroll Reveal Animation
 
-Gli elementi appaiono mentre scorri la pagina.
+Gli elementi compaiono gradualmente durante lo scroll della pagina.
 
-Tecnologia usata:
-
-IntersectionObserver
+Tecnologie utilizzate
+IntersectionObserver API
 classi CSS dinamiche
-
-Effetto:
-
+Effetti visivi
 fade-in
 movimento graduale
-6. Pulsante “Torna Su”
+comparsa animata dei contenuti
+⬆️ Pulsante “Torna Su”
 
-Quando l’utente scende nella pagina:
+Quando l’utente scende nella pagina compare un pulsante che permette di tornare rapidamente all’inizio del sito.
 
-compare un bottone
-cliccandolo si torna in alto
+Caratteristiche
+comparsa automatica
+scroll animato
+maggiore comodità di navigazione
+🖼️ Hero Dinamici
 
-Con animazione smooth.
-
-7. Hero dinamici
-
-Ogni navigatore ha:
+Ogni navigatore possiede una sezione hero personalizzata con:
 
 immagine dedicata
 overlay scuro
-titolo personalizzato
-8. Design Responsive
+titolo dinamico
+descrizione storica
 
-Il sito si adatta a:
+Navigatori presenti:
+
+Cristoforo Colombo
+Amerigo Vespucci
+Ferdinando Magellano
+Giovanni Caboto
+📱 Design Responsive
+
+Il sito si adatta automaticamente a:
 
 PC
 tablet
 smartphone
-
-Usando:
-
+Tecniche utilizzate
 Flexbox
 media queries
 layout fluidi
-Struttura del progetto
-Cartelle e file principali
+📂 Struttura del Progetto
 progetto/
 │
 ├── index.html
@@ -104,201 +113,209 @@ progetto/
 │   └── main.js
 │
 ├── assets/
-│   ├── immagini
-│   └── icone
+│   ├── immagini/
+│   └── icone/
 │
 └── README.md
-Ruolo dei file
+📄 Ruolo dei File
 File	Funzione
-index.html	homepage
-pagine navigatori	contenuti storici
-style.css	stile generale
-navigatori.css	stili specifici
-main.js	interazioni dinamiche
-assets/	immagini e risorse
-Come funziona il progetto
-1. Caricamento iniziale
+index.html	Homepage principale
+pagine navigatori	Contenuti storici dedicati
+style.css	Stile generale del sito
+navigatori.css	Stili specifici delle pagine
+main.js	Funzionalità dinamiche
+assets/	Immagini e risorse grafiche
+⚙️ Come Funziona il Progetto
+1️⃣ Caricamento iniziale
 
-Quando il sito si apre:
+Quando il sito viene aperto:
 
-HTML costruisce la pagina
+HTML costruisce la struttura della pagina
 CSS applica grafica e layout
-JS attiva le funzionalità dinamiche
-2. Attivazione tema
+JavaScript attiva le funzionalità dinamiche
+2️⃣ Gestione del Tema
 
 JavaScript:
 
 controlla il tema salvato
 applica dark/light mode
-aggiorna il bottone
-3. Loader
+aggiorna il pulsante del tema
+3️⃣ Loader
 
 Durante il caricamento:
 
-il loader copre la pagina
-a caricamento completato scompare
-4. Scroll dinamico
+il loader copre temporaneamente la pagina
+una volta completato il caricamento scompare con animazione
+4️⃣ Scroll Dinamico
 
 Durante lo scroll:
 
 gli elementi vengono osservati
 quando entrano nello schermo:
-parte animazione
-compare contenuto
-5. Gestione eventi
+parte l’animazione
+compare il contenuto
+5️⃣ Gestione Eventi
 
-JavaScript usa:
+JavaScript utilizza:
 
 addEventListener()
 
-per ascoltare:
+per gestire:
 
 click
 scroll
 caricamento pagina
-Architettura tecnica
+interazioni utente
+🏗️ Architettura Tecnica
 
-Il progetto segue il modello:
+Il progetto segue il principio della:
 
 Separazione delle responsabilità
 Tecnologia	Responsabilità
-HTML	struttura
-CSS	grafica
-JS	comportamento
+HTML	Struttura
+CSS	Grafica
+JavaScript	Comportamento
 
-Questa è una pratica professionale molto importante.
+Questa organizzazione è una pratica molto importante nello sviluppo web moderno.
 
-Tecnologie utilizzate
+💻 Tecnologie Utilizzate
 HTML5
 
-Usato per:
+Utilizzato per:
 
 struttura semantica
-sezioni
-contenuti
+organizzazione contenuti
+sezioni del sito
 CSS3
 
-Usato per:
+Utilizzato per:
 
-layout
+layout responsive
 animazioni
-responsive design
 dark mode
-
-Tecniche moderne:
-
+effetti grafici
+Tecniche moderne usate
 CSS Variables
 Flexbox
 transitions
 keyframes
+media queries
 JavaScript Vanilla
 
-Senza framework.
+Il progetto non utilizza framework esterni.
 
-Usato per:
+JavaScript viene usato per:
 
 gestione DOM
 eventi
 localStorage
 animazioni dinamiche
-Uso di GitHub
+interazioni utente
+🐙 Uso di GitHub
 Cos’è GitHub
 
-GitHub è una piattaforma online usata per:
+GitHub è una piattaforma online utilizzata per:
 
 salvare codice
 collaborare
 versionare progetti
-Git vs GitHub
+pubblicare siti web
+🔄 Git vs GitHub
 Git	GitHub
-sistema di versionamento	piattaforma online
-lavora in locale	lavora nel cloud
-Come viene usato nel progetto
-1. Repository
-
-Il progetto viene salvato in un repository:
-
+Sistema di versionamento	Piattaforma online
+Lavora in locale	Lavora nel cloud
+Gestisce modifiche	Condivide progetti
+🚀 Come viene usato nel progetto
+1️⃣ Creazione Repository
 git init
-2. Salvataggio modifiche
-
-Ogni modifica può essere salvata con:
-
+2️⃣ Salvataggio modifiche
 git add .
-git commit -m "descrizione"
-3. Backup online
-
-Con:
-
+git commit -m "descrizione modifica"
+3️⃣ Backup Online
 git push
 
-il progetto viene caricato su GitHub.
+Il progetto viene caricato online su GitHub.
 
-Vantaggi di GitHub
-Cronologia modifiche
+✅ Vantaggi di GitHub
+📜 Cronologia modifiche
 
-Puoi vedere:
+Permette di vedere:
 
 chi ha modificato
 quando
-cosa è cambiato
-Recupero versioni
+cosa è stato cambiato
+🔙 Recupero versioni
 
 Se qualcosa si rompe:
 
-puoi tornare indietro
-Collaborazione
+è possibile tornare a versioni precedenti
+👥 Collaborazione
 
-Più persone possono lavorare insieme.
+Più persone possono lavorare contemporaneamente sullo stesso progetto.
 
-Hosting del sito
+🌐 Hosting gratuito
 
 Con GitHub Pages il sito può essere pubblicato online gratuitamente.
 
-Workflow tipico del progetto
-Fase 1 — sviluppo
+🔄 Workflow del Progetto
+Fase 1 — Sviluppo
 scrittura HTML
 creazione CSS
-aggiunta JS
-Fase 2 — test
+aggiunta JavaScript
+Fase 2 — Test
 
-Controllo:
+Controllo di:
 
-responsive
+responsive design
 animazioni
 bug
-Fase 3 — commit Git
-
-Salvataggio modifiche:
-
+compatibilità
+Fase 3 — Commit Git
 git commit
-Fase 4 — pubblicazione
 
-Upload su GitHub:
+Salvataggio delle modifiche.
 
+Fase 4 — Pubblicazione
 git push
-Aspetti moderni del progetto
 
-Il progetto usa concetti abbastanza avanzati:
+Upload del progetto su GitHub.
+
+🚀 Aspetti Moderni del Progetto
+
+Il sito utilizza tecnologie e concetti avanzati come:
 
 dark mode persistente
-observer API
-CSS variables
+IntersectionObserver API
+CSS Variables
 responsive design
 DOM dinamico
 localStorage
 animazioni fluide
-Possibili miglioramenti futuri
+🔮 Possibili Miglioramenti Futuri
 Tecnici
 ottimizzazione immagini
 lazy loading
-accessibilità
+accessibilità avanzata
 SEO
 Grafici
-animazioni avanzate
-transizioni 3D
+animazioni 3D
 effetti parallax
+timeline animate
 Funzionali
 ricerca interna
-timeline interattiva
 quiz storico
-mappe esplorazioni
+mappe interattive
+timeline delle esplorazioni
+📚 Conclusione
+
+Questo progetto rappresenta un esempio di sito web moderno sviluppato con tecnologie front-end fondamentali.
+
+Oltre ai contenuti storici sulle scoperte dell’America, il sito dimostra l’utilizzo pratico di:
+
+sviluppo responsive
+animazioni web
+gestione dinamica del DOM
+versionamento con GitHub
+organizzazione professionale del codice
+
+Un progetto pensato per unire:
