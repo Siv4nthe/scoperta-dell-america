@@ -1,13 +1,13 @@
 /* --- TAVOLOZZA COLORI STORICA VARIABILE --- */
 :root {
     /* Tema Chiaro (Premium Heritage) */
-    --bg-page: #fcfaf2;         /* Carta/Avorio antico */
-    --bg-card: #ffffff;         /* Bianco puro per stacco */
-    --text-main: #1e2530;       /* Antracite morbido */
-    --text-muted: #475569;      /* Grigio ardesia */
+    --bg-page: #fcfaf2;         
+    --bg-card: #ffffff;         
+    --text-main: #1e2530;       
+    --text-muted: #475569;      
     --text-hero: #e2e8f0;
-    --navy-imperial: #0c1e36;   /* Blu Oltremare degli oceani */
-    --gold-ancient: #c5a059;    /* Oro antico / Ottone dei sestanti */
+    --navy-imperial: #0c1e36;   
+    --gold-ancient: #c5a059;    
     --shadow: rgba(12, 30, 54, 0.04);
     --shadow-hover: rgba(12, 30, 54, 0.15);
     --border-color: #e2e8f0;
@@ -16,13 +16,13 @@
 
 [data-theme="dark"] {
     /* Tema Scuro (Abisso Oceanico Noctis) */
-    --bg-page: #07111e;         /* Blu notte profondo quasi nero */
-    --bg-card: #0c1e36;         /* Il blu oltremare diventa lo sfondo delle card */
-    --text-main: #fcfaf2;       /* Il testo diventa avorio */
-    --text-muted: #cbd5e1;      /* Grigio chiaro */
+    --bg-page: #07111e;         
+    --bg-card: #0c1e36;         
+    --text-main: #fcfaf2;       
+    --text-muted: #cbd5e1;      
     --text-hero: #e2e8f0;
-    --navy-imperial: #07111e;   /* Inversione sui contrasti dei menu */
-    --gold-ancient: #e5c17d;    /* Un oro leggermente più luminoso per risaltare sullo scuro */
+    --navy-imperial: #07111e;   
+    --gold-ancient: #e5c17d;    
     --shadow: rgba(0, 0, 0, 0.4);
     --shadow-hover: rgba(197, 160, 89, 0.15);
     --border-color: #1e293b;
@@ -131,7 +131,7 @@ nav a:hover, nav a.active {
     font-weight: 600;
 }
 
-/* --- INTERRUTTORE TEMA INIETTATO DA JS --- */
+/* --- INTERRUTTORE TEMA --- */
 .theme-toggle-btn {
     background: none;
     border: 1px solid var(--gold-ancient);
@@ -151,6 +151,42 @@ nav a:hover, nav a.active {
     background-color: var(--gold-ancient);
     color: #0c1e36;
     transform: scale(1.05);
+}
+
+/* --- STILI PER LA MAPPA DI VESPUCCI --- */
+.mappa-vespucci {
+    background: var(--box-info-bg);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px var(--shadow);
+    margin: 40px 0;
+    text-align: center;
+}
+
+.img-mappa {
+    width: 100%;
+    max-width: 1050px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 15px 35px var(--shadow-hover);
+    margin-bottom: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border: 1px solid var(--gold-ancient);
+}
+
+.img-mappa:hover {
+    transform: scale(1.03);
+    box-shadow: 0 25px 45px rgba(197, 160, 89, 0.25);
+}
+
+.didascalia-mappa {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 /* --- BANNER PRINCIPALE ED EDITORIALE --- */
@@ -379,4 +415,8 @@ footer .credits span {
     nav { flex-wrap: wrap; justify-content: center; }
     .introduzione { padding: 35px 20px; }
     .theme-toggle-btn { margin-left: 0; margin-top: 10px; }
+    .mappa-vespucci {
+        padding: 15px;
+        margin: 30px 0;
+    }
 }

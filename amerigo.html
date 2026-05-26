@@ -4,86 +4,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amerigo Vespucci - Mundus Novus</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navigatori.css">
 </head>
+
 <body class="pagina-navigatore">
+
 <!-- struttura header-->
-    <header>
-        <div class="logo">
-            <h1>Orizzonti Sconosciuti</h1>
+<header>
+    <div class="logo">
+        <h1>Orizzonti Sconosciuti</h1>
+    </div>
+
+    <!-- struttura navbar-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="colombo.html">Colombo</a>
+        <a href="amerigo.html" class="active">Vespucci</a>
+        <a href="caboto.html">Caboto</a>
+        <a href="magellano.html">Magellano</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section class="pagina-hero vespucci animate-fade">
+        <span class="date-hero">1499 - 1502</span>
+
+        <h2>Amerigo Vespucci</h2>
+
+        <p>
+            La mente scientifica che guardò oltre l'illusione delle Indie
+            e riconobbe i confini di un quarto continente.
+        </p>
+
+        <span class="autore">
+            A cura di: Cristian Gennaro
+        </span>
+    </section>
+
+    <!-- ancora divisione in sezioni-->
+    <div class="ancore scroll-reveal">
+        <a href="#viaggi">I Viaggi</a>
+        <a href="#continente">L'Intuizione</a>
+        <a href="#lettere">Mundus Novus</a>
+        <a href="#nome">Il Battesimo</a>
+        <a href="#siviglia">La Casa de Contratación</a>
+        <a href="#fonti">Fonti</a>
+    </div>
+
+    <!-- SEZIONE VIAGGI -->
+    <section id="viaggi" class="sezione-contenuto scroll-reveal">
+
+        <h3>La Mappatura del Sud America</h3>
+
+        
+
+            <h5>LE ROTTE DELLE SPEDIZIONI DI VESPUCCI (1499 - 1502)</h5>
+            
+            <p class="didascalia-mappa">
+                Illustrazione che mostra le quattro principali spedizioni di Amerigo Vespucci 
+                lungo le coste del Sud America.
+            </p>
         </div>
-       <!-- struttura navbar-->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="colombo.html">Colombo</a>
-            <a href="amerigo.html" class="active">Vespucci</a>
-            <a href="caboto.html">Caboto</a>
-            <a href="magellano.html">Magellano</a>
-        </nav>
-    </header>
 
-    <main class="container">
-        <section class="pagina-hero vespucci animate-fade">
-            <span class="date-hero">1499 - 1502</span>
-            <h2>Amerigo Vespucci</h2>
-            <p>La mente scientifica che guardò oltre l'illusione delle Indie e riconobbe i confini di un quarto continente.</p>
-            <span class="autore">A cura di: Cristian Gennaro</span>
-        </section>
-<!-- ancora divisione in sezioni-->
-        <div class="ancore scroll-reveal">
-            <a href="#viaggi">I Viaggi</a>
-            <a href="#continente">L'Intuizione</a>
-            <a href="#lettere">Mundus Novus</a>
-            <a href="#nome">Il Battesimo</a>
-            <a href="#siviglia">La Casa de Contratación</a>
-            <a href="#fonti">Fonti</a>
+        <p>
+            Nato a Firenze nel 1454, colto e raffinato diplomatico
+            per la famiglia Medici, Amerigo Vespucci non era un semplice
+            marinaio, ma uno studioso di astronomia.
+            Spostandosi in Spagna, prese parte a spedizioni fondamentali
+            finanziate sia dalla corona spagnola sia da quella portoghese.
+        </p>
+
+        <p>
+            Navigando lungo le coste dell'attuale Brasile,
+            dell'estuario del Rio delle Amazzoni e spingendosi fino
+            alla Patagonia, Vespucci si rese conto che la linea costiera
+            continuava ininterrottamente verso Sud per migliaia di leghe.
+        </p>
+
+    </section>
+
+    <section id="continente" class="sezione-contenuto scroll-reveal">
+
+        <h3>L'Intuizione Scientifica</h3>
+
+        <p>
+            Mentre Colombo cercava disperatamente di far coincidere
+            i paesaggi caraibici con le sfarzose città asiatiche
+            descritte da Marco Polo, Vespucci usò l'astronomia.
+            Calcolando la posizione dei pianeti e rendendosi conto
+            che la fauna, la flora e l'immensità territoriale
+            non avevano alcun riscontro con i testi antichi,
+            giunse alla logica conclusione:
+            quella terra non era l'Asia,
+            ma un blocco continentale immenso e autonomo.
+        </p>
+
+    </section>
+
+    <section id="lettere" class="sezione-contenuto scroll-reveal">
+
+        <h3>Mundus Novus: Il Successo Editoriale</h3>
+
+        <p>
+            Nel 1503 le lettere scritte da Vespucci al suo mecenate
+            a Firenze vennero raccolte e pubblicate sotto il titolo
+            emblematico di <strong>Mundus Novus</strong>.
+
+            Il libretto divenne il primo vero bestseller scientifico
+            della storia europea: tradotto in decine di lingue,
+            demolì in pochi mesi le vecchie credenze geografiche medievali.
+        </p>
+
+    </section>
+
+    <section id="nome" class="sezione-contenuto scroll-reveal">
+
+        <h3>Il Battesimo di un Continente</h3>
+ <div class="info-box mappa-vespucci">
+            <img src="vespucci.png" 
+     alt="Mappa storica dei viaggi di Amerigo Vespucci 1499-1502"
+     class="img-mappa">
+        <div class="info-box">
+
+            <h5>Il Errore dei Cartografi</h5>
+
+            <p>
+                Nel 1507, nel piccolo monastero di
+                Saint-Dié-des-Vosges in Francia,
+                il cartografo tedesco Martin Waldseemüller
+                stava stampando un monumentale planisfero aggiornato.
+
+                Impressionato dal testo di Vespucci,
+                decise di disegnare le nuove terre occidentali
+                inserendovi un nome celebrativo:
+                <strong>America</strong>,
+                dal nome latino del fiorentino
+                (<em>Americus Vespucius</em>),
+                declinato al femminile per uniformarsi
+                a Europa, Asia e Africa.
+            </p>
+
         </div>
 
-        <section id="viaggi" class="sezione-contenuto scroll-reveal">
-            <h3>La Mappatura del Sud America</h3>
-            <p>Nato a Firenze nel 1454, colto e raffinato diplomatico per la famiglia Medici, Amerigo Vespucci non era un semplice marinaio, ma uno studioso di astronomia. Spostandosi in Spagna, prese parte a spedizioni fondamentali finanziate sia dalla corona spagnola sia da quella portoghese.</p>
-            <p>Navigando lungo le coste dell'attuale Brasile, dell'estuario del Rio delle Amazzoni e spingendosi fino alla Patagonia, Vespucci si rese conto che la linea costiera continuava ininterrottamente verso Sud per migliaia di leghe.</p>
-        </section>
+    </section>
 
-        <section id="continente" class="sezione-contenuto scroll-reveal">
-            <h3>L'Intuizione Scientifica</h3>
-            <p>Mentre Colombo cercava disperatamente di far coincidere i paesaggi caraibici con le sfarzose città asiatiche descritte da Marco Polo, Vespucci usò l'astronomia. Calcolando la posizione dei pianeti e rendendosi conto che la fauna, la flora e l'immensità territoriale non avevano alcun riscontro con i testi antichi, giunse alla logica conclusione: quella terra non era l'Asia, ma un blocco continentale immenso e autonomo.</p>
-        </section>
+    <section id="siviglia" class="sezione-contenuto scroll-reveal">
 
-        <section id="lettere" class="sezione-contenuto scroll-reveal">
-            <h3>Mundus Novus: Il Successo Editoriale</h3>
-            <p>Nel 1503 le lettere scritte da Vespucci al suo mecenate a Firenze vennero raccolte e pubblicate sotto il titolo emblematico di <strong>Mundus Novus</strong>. Il libretto divenne il primo vero bestseller scientifico della storia europea: tradotto in decine di lingue, demolì in pochi mesi le vecchie credenze geografiche medievali.</p>
-        </section>
+        <h3>Il Guardiano dei Segreti di Spagna</h3>
 
-        <section id="nome" class="sezione-contenuto scroll-reveal">
-            <h3>Il Battesimo di un Continente</h3>
-            <div class="info-box">
-                <h5>Il Errore dei Cartografi</h5>
-                <p>Nel 1507, nel piccolo monastero di Saint-Dié-des-Vosges in Francia, il cartografo tedesco Martin Waldseemüller stava stampando un monumentale planisfero aggiornato. Impressionato dal testo di Vespucci, decise di disegnare le nuove terre occidentali inserendovi un nome celebrativo: <strong>America</strong>, dal nome latino del fiorentino (<em>Americus Vespucius</em>), declinato al femminile per uniformarsi a Europa, Asia e Africa.</p>
-            </div>
-        </section>
+        <p>
+            L'immensa competenza di Vespucci spinse
+            il re Ferdinando d'Aragona a nominarlo,
+            nel 1508, primo <strong>Piloto Mayor</strong>
+            della prestigiosa
+            <em>Casa de la Contratación</em> di Siviglia.
 
-        <section id="siviglia" class="sezione-contenuto scroll-reveal">
-            <h3>Il Guardiano dei Segreti di Spagna</h3>
-            <p>L'immensa competenza di Vespucci spinse il re Ferdinando d'Aragona a nominarlo, nel 1508, primo <strong>Piloto Mayor</strong> della prestigiosa <em>Casa de la Contratación</em> di Siviglia. Vespucci divenne l'uomo più influente della navigazione imperiale: esaminava i capitani, correggeva gli strumenti e custodiva il *Padrón Real*, la mappa ufficiale e segreta del regno su cui venivano tracciate, viaggio dopo viaggio, le nuove terre strappate all'oceano.</p>
-        </section>
+            Vespucci divenne l'uomo più influente
+            della navigazione imperiale:
+            esaminava i capitani,
+            correggeva gli strumenti
+            e custodiva il Padrón Real,
+            la mappa ufficiale e segreta del regno
+            su cui venivano tracciate,
+            viaggio dopo viaggio,
+            le nuove terre strappate all'oceano.
+        </p>
 
-        <section id="fonti" class="sezione-contenuto scroll-reveal fonti">
-            <h3>Fonti Storiche</h3>
-            <ul>
-                <li><a href="https://www.treccani.it/enciclopedia/amerigo-vespucci/" target="_blank">Enciclopedia Treccani - Biografie</a></li>
-                <li><a href="https://it.wikipedia.org/wiki/Amerigo_Vespucci" target="_blank">Wikipedia Italia - Amerigo Vespucci</a></li>
-            </ul>
-        </section>
-    </main>
+    </section>
+
+    <section id="fonti"
+             class="sezione-contenuto scroll-reveal fonti">
+
+        <h3>Fonti Storiche</h3>
+
+        <ul>
+            <li>
+                <a href="https://www.treccani.it/enciclopedia/amerigo-vespucci/"
+                   target="_blank">
+                    Enciclopedia Treccani - Biografie
+                </a>
+            </li>
+
+            <li>
+                <a href="https://it.wikipedia.org/wiki/Amerigo_Vespucci"
+                   target="_blank">
+                    Wikipedia Italia - Amerigo Vespucci
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+</main>
+
 <!-- struttura footer-->
-    <footer>
-        <p>Progetto di Storia &bull; </p>
-        <p class="credits">Sviluppato dagli studenti: <span>F. Vitale, C. Gennaro, I. Santoro, L. Olivero</span></p>
-    </footer>
+<footer>
+
+    <p>
+        Progetto di Storia &bull;
+    </p>
+
+    <p class="credits">
+        Sviluppato dagli studenti:
+        <span>
+            F. Vitale, C. Gennaro,
+            I. Santoro, L. Olivero
+        </span>
+    </p>
+
+</footer>
+
 <!-- struttura button-->
-    <button id="backToTop" title="Torna in alto">&#9875;</button>
-    <script src="main.js"></script>
+<button id="backToTop"
+        title="Torna in alto">
+
+    &#9875;
+
+</button>
+
+<script src="main.js"></script>
+
 </body>
-</html>
+</html> 
