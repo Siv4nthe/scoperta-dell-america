@@ -145,7 +145,7 @@
         rgba(12, 30, 54, 0.9)
     ),
 
-    url("https://upload.wikimedia.org/wikipedia/commons/0/05/Viajes_de_colon.svg");
+    url("https://www.raicultura.it/dl/img/2019/06/10/1560178464139_magellano.jpg");
 
     background-size: cover;
     background-position: center;
@@ -167,7 +167,7 @@
     ),
 
     /* Immagine incorporata base64 */
-    url("data:image/jpeg;base64,...");
+    url("https://www.welfarenetwork.it/media/2020/10/70354/f1_0_accaddeoggi-12-ottobre-1492-il-genovese-cristoforo-colombo-scopre-l-america.jpg");
 
     /* Copertura completa */
     background-size: cover;
